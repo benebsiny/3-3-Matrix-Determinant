@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="162.0" layoutY="37.0" prefHeight="76.0" prefWidth="278.0" text="懶人包三階行列式">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5222222222222223" centerY="0.5" radius="0.7906976744186046">
+               <stops>
+                  <Stop color="#d200e5" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="158.0" layoutY="113.0" prefHeight="143.0" prefWidth="287.0" text="|         |">
+         <font>
+            <Font size="102.0" />
+         </font>
+      </Label>
+      <Button layoutX="274.0" layoutY="272.0" mnemonicParsing="false" onAction="#determinant" text="三階!" />
+      <TextField fx:id="a1str" layoutX="201.0" layoutY="143.0" prefHeight="25.0" prefWidth="44.0" />
+      <TextField fx:id="a2str" layoutX="279.0" layoutY="143.0" prefHeight="25.0" prefWidth="44.0" />
+      <TextField fx:id="a3str" layoutX="355.0" layoutY="143.0" prefHeight="25.0" prefWidth="44.0" />
+      <TextField fx:id="b1str" layoutX="201.0" layoutY="181.0" prefHeight="25.0" prefWidth="44.0" />
+      <TextField fx:id="b2str" layoutX="279.0" layoutY="181.0" prefHeight="25.0" prefWidth="44.0" />
+      <TextField fx:id="b3str" layoutX="355.0" layoutY="181.0" prefHeight="25.0" prefWidth="44.0" />
+      <TextField fx:id="c1str" layoutX="201.0" layoutY="218.0" prefHeight="25.0" prefWidth="44.0" />
+      <TextField fx:id="c2str" layoutX="278.0" layoutY="218.0" prefHeight="25.0" prefWidth="44.0" />
+      <TextField fx:id="c3str" layoutX="355.0" layoutY="218.0" prefHeight="25.0" prefWidth="44.0" />
+      <Label fx:id="answer" alignment="CENTER" layoutX="160.0" layoutY="321.0" prefHeight="63.0" prefWidth="287.0">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#fff400" />
+                  <Stop color="#ff4100" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>
